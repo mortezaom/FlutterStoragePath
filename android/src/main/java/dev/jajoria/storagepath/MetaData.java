@@ -16,6 +16,9 @@ public class MetaData {
     @SerializedName("artist")
     @Expose
     String artist;
+    @SerializedName("title")
+    @Expose
+    String title;
     @SerializedName("dateAdded")
     @Expose
     String dateAdded;
@@ -56,6 +59,14 @@ public class MetaData {
 
     public void setArtist(String artist) {
         this.artist = artist;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDateAdded() {
